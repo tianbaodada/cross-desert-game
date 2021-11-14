@@ -72,7 +72,7 @@ for d in range(T):
                     for wb in wb_range:
                         for fb in fb_range(wb):
                             key = (d, V, w + wb, f + fb)
-                            if  DP[(d,p,w,f)][0] - 2 * wb * price[0] - 2 * fb * price[1] >= 0                                 and DP[key][0] < DP[(d,p,w,f)][0] - 2 * wb * price[0] - 2 * fb * price[1]:
+                            if  DP[(d,p,w,f)][0] - 2 * wb * price[0] - 2 * fb * price[1] >= 0 and DP[key][0] < DP[(d,p,w,f)][0] - 2 * wb * price[0] - 2 * fb * price[1]:
                                 DP[key] = (
                                     DP[(d,p,w,f)][0] - 2 * wb * price[0] - 2 * fb * price[1], 
                                     (d,p,w,f), 
